@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Pricing Component</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/2d1d2f860d.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/js/pricing.js" defer></script>
+  </head>
+  <body>
+    <div class="desktop-bg">
+      <div class="container">
+        <div class="pricing-header">
+          <h1>Simple, traffic-based pricing</h1>
+          <p>
+            Sign-up for our 30-day trial. <br />
+            No credit card required.
+          </p>
+        </div>
+        <div class="pricing-content">
+          <div class="pricing-content__inner">
+            <h3><span id="pageViews">100</span>K PAGEVIEWS</h3>
+            <input
+              type="range"
+              id="pageViewRange"
+              class="slider-first"
+              name="volume"
+              min="0"
+              max="100"
+            />
+            <h2 >$<span id="pricing">16</span> .00/ <span id="period">month</span></h2>
+          </div>
+          <div class="billing_inner">
+            <p>Monthly Billing</p>
+
+            <label class="switch">
+              <input type="checkbox" id="billingType" checked />
+              <span class="slider round"></span>
+            </label>
+            <span id="">Yearly Billing</span>
+            <a href="#">-25%</a>
+          </div>
+          <div class="borderbottom"></div>
+          <div class="billing_footer">
+            <div class="billing_check">
+              <div class="check_text">
+                <img src="assets/images/check.svg" alt="" />
+                <p>Unlimited websites</p>
+              </div>
+              <div class="check_text">
+                <img src="assets/images/check.svg" alt="" />
+                <p>100% data ownership</p>
+              </div>
+              <div class="check_text">
+                <img src="assets/images/check.svg" alt="" />
+                <p>Email reports</p>
+              </div>
+            </div>
+            <a href="#">Start my trial</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
