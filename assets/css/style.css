@@ -128,10 +128,13 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+.desktop-bg {
+  width: 100%;
+}
 .container {
   background: url(../images/Rectangle.svg) no-repeat;
-  padding-inline: 24px;
   padding-top: 57px;
+  width: 100%;
 }
 .pricing-header {
   background: url(../images/header-back-img.svg) no-repeat center;
@@ -171,6 +174,24 @@ table {
   padding-top: 34px;
   margin-bottom: 25px;
 }
+#pricing {
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 54.64px;
+  letter-spacing: -1px;
+  text-align: right;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+#period {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 21.86px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #848ead;
+}
 
 .slider-first {
   -webkit-appearance: none; /* Tarayıcı varsayılan stilini kapatma */
@@ -183,7 +204,6 @@ table {
   opacity: 1px;
   margin-bottom: 40px;
 }
-
 
 .slider-first::-webkit-slider-thumb {
   -webkit-appearance: none;
@@ -215,13 +235,7 @@ table {
   color: #293356;
   margin-bottom: 34px;
 }
-/* .pricing-content h2 span {
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 19.12px;
-  text-align: center;
-  color: #848ead;
-} */
+
 
 .billing_inner {
   display: flex;
@@ -275,7 +289,7 @@ table {
 }
 
 input:checked + .slider {
-  background-color: #7AEADF;
+  background-color: #7aeadf;
 }
 
 input:focus + .slider {
@@ -287,7 +301,6 @@ input:checked + .slider:before {
   -ms-transform: translateX(26px);
   transform: translateX(26px);
 }
-
 
 .slider.round {
   border-radius: 34px;
@@ -355,14 +368,37 @@ input:checked + .slider:before {
   text-decoration: none;
   margin-left: 77px;
 }
-@media only screen and (min-width: 1280px) {
+
+@media only screen and (min-width: 1024px) {
   .container {
     background-color: #f1f5fe;
     border-bottom-left-radius: 191.5px;
     padding-inline: 450px;
+    width: 540px;
+    height: 397px;
   }
   .desktop-bg {
     background-color: #f9faff;
+    width: 100%;
+    height: 200vh;
+  }
+  #pricing {
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 54.64px;
+    letter-spacing: -1px;
+    text-align: right;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+  #period {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 21.86px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #848ead;
   }
   .pricing-header h1 {
     font-size: 28px;

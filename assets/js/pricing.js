@@ -23,11 +23,11 @@ changePricing ();
 function changePricing() {
 	if(billingTypeValue) {
 		pricing.innerText = (Number(pageViewRange.value) * 0.75) * 12;
-        period.innerText ="year";
+        period.innerText ="/year";
 		pageViews.innerText = Number(pageViewRange.value * 6.25) * 12;
 	}else {
 		pricing.innerText = pageViewRange.value
-		period.innerText ="month";
+		period.innerText ="/month";
 		pageViews.innerText= pageViewRange * 6.25;
 	}
 }
